@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function demSo(str) {
+            let dem = str.match(/^[aeiou]/g);
+            if (dem.test(str)){
+                return dem.length;
+            }
+
+        }
+        console.log(demSo('abcdei'));
+    </script>
+</body>
+</html>

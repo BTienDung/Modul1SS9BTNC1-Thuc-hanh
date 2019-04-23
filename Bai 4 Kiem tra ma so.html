@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkPass(str) {
+            regexp = /^[0-9a-zA-Z]{6,}$/;
+            if (regexp.test(str)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(checkPass('tiendung123'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkString(str) {
+            regexp = /^(0?[1-9]|[12][1-9]|3[01])+\/(0?[1-9]|1[012])+\/([1][0-9]{3})$/;
+            if (regexp.test(str)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        let day = '01/01/1999';
+        console.log(checkString(day));
+        let day2 = '01/01/0999';
+        console.log(checkString(day2));
+    </script>
+</body>
+</html>
